@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <hi class="title">BUDGET APP</hi>
+    <div class="section1">
+        <div class="budget-form">
+            <form action="#" id="form1">
+                <label for="">Enter Budget</label>
+                <input type="text" id="Budget-amount">
+                <button id="Add-budget">Add budget</button>
+            </form>
+        </div>
+
+        <div class="feedback">
+            <div class="feedback-item">
+                <h2 class="feedback-item__title">Budget</h2>
+                <img class="feedback-item__image" src="/Budget.jpg" alt="">
+                <p class="feedback-item__amount green">
+                   $ <span class="feedback-item_budget_show">0</span>
+                </p>
+            </div>
+
+            <div class="feedback-item">
+                <h2 class="feedback-item__title">Expenses</h2>
+                <img class="feedback-item__image" src="/Expenses.jpg" alt="">
+                <p class="feedback-item__amount red">
+                   $ <span class="feedback-item_budget_show">0</span>
+                </p>
+            </div>
+
+            <div class="feedback-item">
+                <h2 class="feedback-item__title">Balance</h2>
+                <img class="feedback-item__image" src="/Balance.jpg" alt="">
+                <p class="feedback-item__amount blue">
+                   $ <span class="feedback-item_budget_show">0</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section2">
+        <div class="expense-form">
+            <form action="#" id="form2">
+                <label for="">Input Expense Name</label>
+                <input type="text" id="expense-name">
+                <label for="">Input Expense Amount</label>
+                <input type="text" id="expense-amount">
+                <button id="expense-add">Add Expense</button>
+
+            </form>
+        </div>
+
+           <div class="expense-feedback">
+               <table>
+                   <thead>
+                       <tr>
+                           <th class="Expense-Title">Expense Title</th>
+                           <th class="Expense-Amount">Expense Amount</th>
+                           
+                       </tr>
+                   </thead>
+                   <tbody></tbody>
+               </table>
+
+               <template id="expense-row">
+                   <tr>
+                       <td class="Expense-title"></td>
+                       <td class="Expense-amount"></td>
+                   </tr>
+               </template>
+           </div>
+
+
+    </div>
+    </div>
+</body>
+</html>
